@@ -19,6 +19,9 @@ const sequelize = new Sequelize("sistemaDeCadastro","root","",{
 app.get('/card', function(req,res){
     res.render('layouts/form');
 })
+app.post('/add',function(req,res){
+    res.send("formulário recebido");
+})
 
 
 app.listen(8081,function(){
